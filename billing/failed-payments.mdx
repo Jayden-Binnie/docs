@@ -1,58 +1,46 @@
 ---
-title: "New file"
-description: "Description of your new file."
+title: "Failed Payments"
+description: "When a student misses payment they will immediately start receiving the following reminders."
 ---
 
-diff --git a//dev/null b/billing/failed-payments.mdx
+<Steps>
+  <Step title="First Attempt Fails">
+    The student will recieve this email with a link to pay via a stripe hosted page. Email opens are tracked.
 
-index 0000000000000000000000000000000000000000..931c55c0cb9773db881d2a0b312fcf9466e3e371 100644
+    <Frame>
+      <img
+        src="/images/BrozPaymentReminder.png"
+        alt="Broz Payment Reminder"
+        title="Broz Payment Reminder"
+        style={{ display:"block",width:"100%",height:"auto",margin:"0 auto" }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Third Attempt Fails (2 Retries)">
+    After 2 more retries (3 total attempts to take the payment) the student will recieve the following SMS. The link to pay via stripe is rebranded to our domain to reduce SMS costs and to make the link seem more familiar and have a high click rate.
 
---- a//dev/null
+    ![IMG 4309 PN](/images/IMG_4309.PNG)
 
-\+++ b/billing/failed-payments.mdx
+    {/* add content here later, or another <Frame> if you want */}
+  </Step>
+  <Step title="Fifth Attempt Fails (4 Retries)">
+    ![Screenshot2025 09 23004543 Pn](/images/Screenshot2025-09-23004543.png)
+  </Step>
+  <Step title="Eighth Attempt Fails (7 Retries)">
+    One more rebranded "pay now" link is SMS'd to the student. If they choose not to pay with the link, and their final retry fails, their membership is automatically cancelled and stripe won't attempt any futher charges ever.
 
-@@ -0,0 +1,22 @@
+    ![IMG 4308 PN](/images/IMG_4308.PNG)
+  </Step>
+</Steps>
 
-\+---
+## How to know if a student has been automatically cancelled
 
-\+title: "Failed payments"
+Everytime a students membership is cancelled, stripe sends out an automatic reminder email to us saying the following:
 
-\+description: "Troubleshoot invoices that can't be processed."
+![Untitleddesign Pn](/images/Untitleddesign.png)
 
-\+---
+## What to do once a student is automatically cancelled
 
-\+
+Option 1: If the student is a good member, it is advisable to call them and see if they are still interested in training
 
-\+## Overview
-
-\+
-
-\+Use this page to describe what happens when a payment attempt fails and how customers can fix the issue.
-
-\+
-
-\+## Common causes
-
-\+
-
-\+- Expired or invalid payment method.
-
-\+- Insufficient funds.
-
-\+- Temporary bank restrictions or fraud checks.
-
-\+
-
-\+## Resolution steps
-
-\+
-
-\+1. Ask the customer to review and update their payment details.
-
-\+2. Retry the payment manually or wait for the automatic retry window.
-
-\+3. Escalate to your support or finance team if the issue persists.
-
-\+
-
-\+\> ℹ️ **Note:** Document any automated emails or in-product notices that are sent after a failed payment.
+Option 2: Let Jayden know so he can send them a membership cancellation confirmation email and update their airtable profile accordingly
