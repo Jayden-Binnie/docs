@@ -16,7 +16,6 @@
           {
             "group": "Billing",
             "pages": [
-              "billing",
               "billing/pausing-payments",
               "billing/failed-payments"
             ]
