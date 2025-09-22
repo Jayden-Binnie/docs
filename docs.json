@@ -16,9 +16,7 @@
           {
             "group": "Home",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "index"
             ]
           },
           {
@@ -50,6 +48,7 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "homepage": "/", 
   "contextual": {
     "options": [
       "copy",
