@@ -28,23 +28,31 @@ This page outlines the key expectations and workflows for front desk and recepti
 - Know where the first aid kit and AED are located.
 - In case of injury, alert the head instructor first.
 
-````
 ```mermaid
-  flowchart LR
-    subgraph subgraph1
-        direction TB
-        top1[top] --> bottom1[bottom]
-    end
-    subgraph subgraph2
-        direction TB
-        top2[top] --> bottom2[bottom]
-    end
-    %% ^ These subgraphs are identical, except for the links to them:
+flowchart TB
+    A["Trial Walks In<br>Are they booked in Air Table?"]
+    B["Do they have a waiver"]
+    C["Tell them to do the link<br>in their email or SMS"]
+    D["GET THEM TO DO A WALK IN<br>TRIAL FORM"]
+    E["AWESOME → THEY ARE<br>GOOD TO TRIAL"]
+    F["TRIAL FINISHES"]
+    G["ARE THEY A GOOD FIT?"]
+    H["ASK THEM IF THEY WANT<br>TO ENROL"]
+    I["TELL JAYDEN ASAP"]
 
-    %% Link *to* subgraph1: subgraph1 direction is maintained
-    outside --> subgraph1
-    %% Link *within* subgraph2:
-    %% subgraph2 inherits the direction of the top-level graph (LR)
-    outside ---> top2
+    %% Connections
+    A -->|YES| B
+    A -->|NO| D
+
+    B -->|YES| E
+    B -->|NO| C
+
+    C --> E
+    D --> E
+
+    E --> F
+    F --> G
+
+    G -->|YES| H
+    G -->|NO| I
 ```
-````
