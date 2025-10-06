@@ -11,26 +11,40 @@ This page outlines the key expectations and workflows for front desk and recepti
 
 ## Daily Tasks
 
-- Greet every student and parent with a smile and eye contact.  
-
+- Greet every student and parent with a smile and eye contact.
 - Check off attendance in Airtable.
-
 - Handle new trial sign-ins and direct them to instructors.
-
 - Keep the reception desk tidy and professional.
 
 ## Communication
 
 - Always use polite, friendly language.
-
 - Direct training-related questions to the head instructor.
-
 - Report payment or system issues immediately.
 
 ## Emergencies
 
 - Keep the emergency contact list visible.
-
 - Know where the first aid kit and AED are located.
-
 - In case of injury, alert the head instructor first.
+
+````
+```mermaid
+  flowchart LR
+    subgraph subgraph1
+        direction TB
+        top1[top] --> bottom1[bottom]
+    end
+    subgraph subgraph2
+        direction TB
+        top2[top] --> bottom2[bottom]
+    end
+    %% ^ These subgraphs are identical, except for the links to them:
+
+    %% Link *to* subgraph1: subgraph1 direction is maintained
+    outside --> subgraph1
+    %% Link *within* subgraph2:
+    %% subgraph2 inherits the direction of the top-level graph (LR)
+    outside ---> top2
+```
+````
