@@ -21,10 +21,11 @@
             ]
           },
           {
-            "group": "Billing",
+            "group": "Operations",
             "pages": [
-              "billing/pausing-payments",
-              "billing/failed-payments"
+              "Operations/pausing-payments",
+              "Operations/failed-payments",
+              "Operations/sales"
             ]
           }
         ]
