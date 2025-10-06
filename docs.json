@@ -16,7 +16,8 @@
           {
             "group": "Home",
             "pages": [
-              "index"
+              "index",
+              "reception-sop"
             ]
           },
           {
@@ -48,7 +49,7 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "homepage": "/", 
+  "homepage": "/",
   "contextual": {
     "options": [
       "copy",
