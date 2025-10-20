@@ -15,7 +15,7 @@
         "tab": "Docs",
         "groups": [
           {
-            "group": "Home",
+            "group": "Most Important",
             "pages": [
               "index",
               "reception-sop"
@@ -25,8 +25,13 @@
             "group": "Operations",
             "pages": [
               "Operations/pausing-payments",
-              "Operations/failed-payments",
-              "Operations/sales"
+              "Operations/failed-payments"
+            ]
+          },
+          {
+            "group": "Sales",
+            "pages": [
+              "Sales/our-offer"
             ]
           }
         ]
@@ -46,7 +51,7 @@
     ],
     "global": {
       "anchors": [
-                {
+        {
           "anchor": "Martial Logic",
           "href": "https://martiallogic.com",
           "icon": "globe"
