@@ -61,8 +61,7 @@
   },
  "logo": {
   "light": "/logo/MartialLogicLogo.svg",
-  "dark": "/logo/MartialLogicLogo.svg",
-  "logoHeight": 64
+  "dark": "/logo/MartialLogicLogo.svg"
 },
   "homepage": "/",
   "contextual": {
