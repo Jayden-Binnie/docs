@@ -54,8 +54,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/MartialLogicLogo.svg",
+    "dark": "/logo/MartialLogicLogo.svg"
   },
   "homepage": "/",
   "contextual": {
