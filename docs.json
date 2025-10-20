@@ -59,10 +59,11 @@
       ]
     }
   },
-  "logo": {
-    "light": "/logo/MartialLogicLogo.svg",
-    "dark": "/logo/MartialLogicLogo.svg"
-  },
+ "logo": {
+  "light": "/logo/MartialLogicLogo.svg",
+  "dark": "/logo/MartialLogicLogo.svg",
+  "logoHeight": 64
+},
   "homepage": "/",
   "contextual": {
     "options": [
