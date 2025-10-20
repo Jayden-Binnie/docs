@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Main",
+        "tab": "Docs",
         "groups": [
           {
             "group": "Home",
@@ -29,19 +29,26 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "What's New",
+        "groups": [
+          {
+            "group": "Updates",
+            "pages": [
+              "whats-new",
+              "release-notes"
+            ]
+          }
+        ]
       }
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+                {
+          "anchor": "Martial Logic",
+          "href": "https://martiallogic.com",
+          "icon": "globe"
         }
       ]
     }
