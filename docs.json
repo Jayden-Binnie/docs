@@ -17,7 +17,6 @@
           {
             "group": "Most Important",
             "pages": [
-              "index",
               "reception-sop"
             ]
           },
@@ -40,8 +39,9 @@
         "tab": "What's New",
         "groups": [
           {
-            "group": "Updates",
+            "group": "What's New",
             "pages": [
+              "index",
               "whats-new",
               "release-notes"
             ]
@@ -59,10 +59,10 @@
       ]
     }
   },
- "logo": {
-  "light": "/logo/MartialLogicLogo.svg",
-  "dark": "/logo/MartialLogicLogo.svg"
-},
+  "logo": {
+    "light": "/logo/MartialLogicLogo.svg",
+    "dark": "/logo/MartialLogicLogo.svg"
+  },
   "homepage": "/",
   "contextual": {
     "options": [
