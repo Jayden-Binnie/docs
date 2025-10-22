@@ -24,7 +24,8 @@
             "group": "Operations",
             "pages": [
               "Operations/pausing-payments",
-              "Operations/failed-payments"
+              "Operations/failed-payments",
+              "Operations/updating-member-details"
             ]
           },
           {
