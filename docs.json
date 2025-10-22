@@ -28,6 +28,12 @@
             ]
           },
           {
+            "group": "Airtable",
+            "pages": [
+              "Airtable/Airtable"
+            ]
+          },
+          {
             "group": "Sales",
             "pages": [
               "Sales/our-offer"
