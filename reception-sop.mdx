@@ -69,61 +69,45 @@ description: "Welcome to the Reception Standard Operating Procedures (SOP). This
   <Accordion title="A member wants to update their card or email etc">
     See the operations page, updating member details
   </Accordion>
+  <Accordion title="Someone Walks In Without Having Talked To Jayden (They Are Not Booked in Airtable)">
+    Make them do a walk in Form
+  </Accordion>
 </AccordionGroup>
 
-## Important Info For Reception
-
-#### All booked trials and walk ins recieve
-
-- A text from me during their class telling them to check their emails
-- an email offering them to sign up straight away and save \$49 sign up fee and get a free week too
-
-Put this part into the sales page and link it with the flowchart
-
----
-
-- Greet every student and parent with a smile and eye contact.
-- Check off attendance in Airtable.
-- Handle new trial sign-ins and direct them to instructors.
-- Keep the reception desk tidy and professional.
-
-## Communication
-
-- Always use polite, friendly language.
-- Direct training-related questions to the head instructor.
-- Report payment or system issues immediately.
-
-## Emergencies
-
-- Keep the emergency contact list visible.
-- Know where the first aid kit and AED are located.
-- In case of injury, alert the head instructor first.
+## Customer Journey
 
 ```mermaid
 flowchart TB
-    A["Trial Walks In<br>Are they booked in Air Table?"]
-    B["Do they have a waiver"]
-    C["Tell them to do the link<br>in their email or SMS"]
-    D["GET THEM TO DO A WALK IN<br>TRIAL FORM"]
-    E["AWESOME → THEY ARE<br>GOOD TO TRIAL"]
-    F["TRIAL FINISHES"]
-    G["ARE THEY A GOOD FIT?"]
-    H["ASK THEM IF THEY WANT<br>TO ENROL"]
-    I["TELL JAYDEN ASAP"]
+    %% Entry point
+    A["Trial Walks In<br>Greet them within a few seconds.<br>No one likes standing around unsure what to do."]
 
-    %% Connections
-    A -->|YES| B
-    A -->|NO| D
+    %% Check AirTable
+    B["Are they booked in AirTable?"]
+    A --> B
 
-    B -->|YES| E
-    B -->|NO| C
+    %% Not in AirTable
+    B -->|No| C["GET THEM TO DO A WALK-IN<br>TRIAL FORM<br><br>(Trial not in calendar)"]
+    %% Booked in AirTable
+    B -->|Yes| D["Do they have a waiver?"]
 
-    C --> E
-    D --> E
+    %% Waiver logic
+    D -->|No| E["Tell them to click the link<br>in their email or SMS.<br>If they can’t find it,<br>just get them to do a walk-in form."]
+    D -->|Yes| F["AWESOME → THEY ARE<br>GOOD TO TRIAL"]
 
+    %% Trial happens
+    C --> F
     E --> F
-    F --> G
+    F --> G["TRIAL FINISHES"]
 
-    G -->|YES| H
-    G -->|NO| I
+    %% Fit evaluation
+    G --> H["ARE THEY A GOOD FIT?"]
+    H -->|Yes| I["Follow the Sales Script<br>from our sales page"]
+    H -->|No| J["Tell Jayden immediately<br>so he can contact them<br>and let them know it’s<br>not a good fit"]
+
+    %% Prospect reactions (extra section)
+    I --> K["PROSPECT IS KEEN TO SIGN UP STRAIGHT AWAY"]
+    I --> L["PROSPECT SEEMS DEFENSIVE OR DEFLECTS"]
+    K --> M["Either way they’ll receive<br>our 'Sign-Up Offer' email"]
+    L --> M
+
 ```
