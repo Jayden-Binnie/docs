@@ -35,6 +35,13 @@
             ]
           },
           {
+            "group": "Member-Experiance",
+            "pages": [
+              "Member-Experiance/Onboarding",
+              "Member-Experiance/Reducing-Churn"
+            ]
+          },
+          {
             "group": "Sales",
             "pages": [
               "Sales/our-offer"
