@@ -3,37 +3,37 @@ title: "Reception SOP"
 description: "Welcome to the Reception Standard Operating Procedures (SOP). This page explains what to check each day and how to keep our front desk running smoothly."
 ---
 
-## Daily Tasks
+# Daily Tasks
 
 <Steps>
-  <Step title="Check Airtable for Any New Trials Today" stepNumber={1}>
-    Before classes start, \*\*look in the Airtable Calendar \*\*for any new trial bookings.
+  <Step title="Check Airtable for Any New Trials Today" stepNumber={1} titleSize="h2">
+    Before classes start, **look in the Airtable Calendar** for any new trial bookings.
 
     Before a new student comes in, you should already know:
 
     - The names of new students (and parents, if listed)
-    - Whether they have completed their **waiver form**
+    - Whether they have completed their waiver form
 
-    This helps them feel **expected and welcome**, and shows we’re **organised and professional**.
+    This helps them feel expected and welcome, and shows we’re organised and professional.
 
     <Warning>
       If you skip this step and make everyone fill out a walk-in form, a trial student might will get pitched twice - this feels awkward and unprofessional.
     </Warning>
   </Step>
-  <Step title="Confirm New People Are Enrolled in Airtable" stepNumber={2}>
+  <Step title="Confirm New People Are Enrolled in Airtable" stepNumber={2} titleSize="h2">
     If you see someone you **don’t recognise**, **ask their name immediately**.
 
     Don’t assume they’re signed up - even if they’ve been training for a few weeks.
 
-    For anyone you’re unsure about, **check that they’re in Airtable** (specifically in the **CRM tab**).
+    For anyone you’re unsure about, check that they’re in Airtable (specifically in the CRM tab).
 
     If someone is training but not listed in Airtable, it means they haven’t fully completed their sign-up form.
 
-    This usually means they’re missing **payment details** or a **waiver** - both are big issues.
+    This usually means they’re missing payment details or a waiver - both are big issues.
 
     Ask them to either:
 
-    **1) Complete their sign-up** (they should have received an email prompting them to finish it), or
+    **1) Complete their sign-up** (they should have received an [email prompting them to finish it](#member-not-in-airtable)), or
 
     **2) Redo their sign-up** completely on the gym iPad or their phone, and show you once it’s done.
 
@@ -41,8 +41,8 @@ description: "Welcome to the Reception Standard Operating Procedures (SOP). This
       Do not allow anyone to train without being properly enrolled in Airtable.
     </Warning>
   </Step>
-  <Step title="Check Recently Churned Members" stepNumber={3}>
-    Once a week, **look over the “Churned Members” list** in Airtable.
+  <Step title="Check Recently Churned Members" stepNumber={3} titleSize="h2">
+    Atleast once a week, look over the “Churned Members” list in Airtable.
 
     This helps you catch anyone who cancelled but is still showing up to train.
 
@@ -50,7 +50,7 @@ description: "Welcome to the Reception Standard Operating Procedures (SOP). This
   </Step>
 </Steps>
 
-## What To Do If?
+# What To Do If?
 
 <AccordionGroup>
   <Accordion title="Trialist Is in Airtable - But They No-Showed">
@@ -100,8 +100,19 @@ description: "Welcome to the Reception Standard Operating Procedures (SOP). This
 
     Ask Jayden for further explanation.
   </Accordion>
+  <a id="member-not-in-airtable" />
+
   <Accordion title="A Member Is Training But Cannot Be Found In Airtable">
-    Anyone who isn’t in Airtable would have either gotten an email an automatic email from us prompting them to complete their enrolment or they never did it. There is a small chance our email prompting them to finsh the sign up could have gone to spam. Tell them to check their email (including junk mail.)
+    There are only two reasons someone might be training but not found in Airtable:
+
+    3. They started signing up but got distracted before finishing the form.
+    2. They are intentionally avoiding signing up (to skip payment or avoid filling in details).
+
+    Anyone who starts our sign-up form and doesn’t finish will automatically get an email from us.\
+    This email goes out 15 minutes after they abandon the form and again 2 days later.\
+    It asks them to complete their enrolment.
+
+    There’s a small chance that our email could end up in their spam or junk folder - remind them to check.
 
     <div style={{ display:"flex",justifyContent:"center",overflowX:"hidden" }}>
     <Frame caption="Form abandonment email example">
@@ -112,6 +123,18 @@ description: "Welcome to the Reception Standard Operating Procedures (SOP). This
       />
     </Frame>
     </div>
+
+    With this follow-up system in place, most people who still aren’t in Airtable are probably intentionally avoiding signing up.
+
+    Ask them to do one of the following:
+
+    **1) Complete their sign-up** from the email they received (if they already started the process), or
+
+    **2) Redo their sign-up** completely on the gym iPad or their phone, and show you once it’s done.
+
+    <Warning>
+      Do not allow anyone to train until they are fully enrolled in Airtable.
+    </Warning>
   </Accordion>
   <Accordion title="Someone Wants a Discount or Says They Can’t Afford Training">
     Do not negotiate prices.
@@ -140,7 +163,7 @@ description: "Welcome to the Reception Standard Operating Procedures (SOP). This
   </Accordion>
 </AccordionGroup>
 
-## Customer Journey
+# Customer Journey
 
 ```mermaid
 flowchart TB
